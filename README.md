@@ -1,0 +1,55 @@
+# ggsegYan
+
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/ggsegverse/ggsegYan/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ggsegverse/ggsegYan/actions/workflows/R-CMD-check.yaml)
+[![r-universe](https://ggsegverse.r-universe.dev/badges/ggsegYan)](https://ggsegverse.r-universe.dev/ggsegYan)
+<!-- badges: end -->
+
+Yan 2023 Homotopic Cortical Parcellation Atlases for the ggsegverse Ecosystem.
+
+## Installation
+
+``` r
+# From r-universe
+install.packages("ggsegYan", repos = "https://ggsegverse.r-universe.dev")
+
+# From GitHub
+# install.packages("remotes")
+remotes::install_github("ggsegverse/ggsegYan")
+```
+
+## Usage
+
+``` r
+library(ggsegYan)
+library(ggseg)
+
+plot(yan7_400()) +
+  theme_brain()
+```
+
+## Atlases
+
+Homotopic cortical parcellations at 100--1000 parcels with Yeo 7-network and 17-network labels (Yan et al., 2023).
+
+### Available variants
+
+| Parcels | 7 Networks | 17 Networks |
+|--------:|:-----------|:------------|
+| 100 | `yan7_100()` | `yan17_100()` |
+| 200 | `yan7_200()` | `yan17_200()` |
+| 300 | `yan7_300()` | `yan17_300()` |
+| 400 | `yan7_400()` | `yan17_400()` |
+| 500 | `yan7_500()` | `yan17_500()` |
+| 600 | `yan7_600()` | `yan17_600()` |
+| 700 | `yan7_700()` | `yan17_700()` |
+| 800 | `yan7_800()` | `yan17_800()` |
+| 900 | `yan7_900()` | `yan17_900()` |
+| 1000 | `yan7_1000()` | `yan17_1000()` |
+
+## Data source
+
+Annotation files from [ThomasYeoLab/CBIG](https://github.com/ThomasYeoLab/CBIG/tree/master/stable_projects/brain_parcellation/Yan2023_homotopic/parcellations/FreeSurfer/fsaverage5/label) (fsaverage5).
+
+- **Reference**: Yan et al. (2023) [doi:10.1016/j.neuroimage.2023.120010](https://doi.org/10.1016/j.neuroimage.2023.120010)
+- **Date obtained**: 2026-03-28
