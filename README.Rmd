@@ -4,104 +4,80 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r setup, include = FALSE}
+```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
-  out.width = "100%",
-  fig.width = 10,
-  fig.retina = 3
+  out.width = "100%"
 )
 ```
 
-# ggsegYan <img src="man/figures/logo.png" align="right" height="138" />
+# ggsegYan
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/ggsegverse/ggsegYan/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ggsegverse/ggsegYan/actions/workflows/R-CMD-check.yaml)
-[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![r-universe](https://ggsegverse.r-universe.dev/badges/ggsegYan)](https://ggsegverse.r-universe.dev/ggsegYan)
 <!-- badges: end -->
 
-This package provides the **yan** brain atlas for use with the [ggseg](https://ggsegverse.github.io/ggseg/) and [ggseg3d](https://ggsegverse.github.io/ggseg3d/) packages.
-
-## Atlas Citation
-
-> **TODO:** Add the original publication reference for this atlas here.
->
-> Example format:
-> Author A, Author B (Year). Title of the atlas paper. *Journal Name*, Volume(Issue), Pages. DOI: [10.xxxx/xxxxx](https://doi.org/10.xxxx/xxxxx)
-
-If you use this atlas in your work, please cite both the original atlas publication above and the ggseg package:
-
-> Mowinckel AM, Vidal-Piñeiro D (2020). "Visualization of Brain Statistics With R Packages ggseg and ggseg3d." *Advances in Methods and Practices in Psychological Science*, 3(4), 466-483. DOI: [10.1177/2515245920928009](https://doi.org/10.1177/2515245920928009)
-
+Yan 2023 Homotopic Cortical Parcellation Atlases for the ggsegverse Ecosystem.
 
 ## Installation
 
-Install from the ggsegverse [r-universe](https://ggsegverse.r-universe.dev/):
+```{r, eval = FALSE}
+# From r-universe
+install.packages("ggsegYan", repos = "https://ggsegverse.r-universe.dev")
 
-```{r eval = FALSE}
-options(repos = c(
-  ggsegverse = "https://ggsegverse.r-universe.dev",
-  CRAN = "https://cloud.r-project.org"
-))
-
-install.packages("ggsegYan")
-```
-
-Or install the development version from GitHub:
-
-```{r eval = FALSE}
+# From GitHub
 # install.packages("remotes")
 remotes::install_github("ggsegverse/ggsegYan")
 ```
 
+## Atlases
+Homotopic cortical parcellations at 100--1000 parcels with Yeo 7-network and 17-network labels (Yan et al., 2023).
 
-## Usage
+### Available variants
 
-### 2D Brain Plot
+| Parcels | 7 Networks | 17 Networks |
+|--------:|:-----------|:------------|
+| 100 | `yan7_100()` | `yan17_100()` |
+| 200 | `yan7_200()` | `yan17_200()` |
+| 300 | `yan7_300()` | `yan17_300()` |
+| 400 | `yan7_400()` | `yan17_400()` |
+| 500 | `yan7_500()` | `yan17_500()` |
+| 600 | `yan7_600()` | `yan17_600()` |
+| 700 | `yan7_700()` | `yan17_700()` |
+| 800 | `yan7_800()` | `yan17_800()` |
+| 900 | `yan7_900()` | `yan17_900()` |
+| 1000 | `yan7_1000()` | `yan17_1000()` |
 
-```{r plot-2d}
-library(ggseg)
+### yan7_100
+
+```{r yan7_100}
 library(ggsegYan)
-
-plot(yan()) +
-  theme(
-    legend.position = "bottom",
-    legend.text = element_text(size = 7)
-  ) +
-  guides(fill = guide_legend(ncol = 4))
+plot(yan7_100())
 ```
 
-### 3D Brain Visualisation
+### yan7_1000
 
-```{r plot-3d-code, eval = FALSE}
-library(ggseg3d)
-
-ggseg3d(atlas = yan()) |>
-  pan_camera("right lateral")
+```{r yan7_1000}
+plot(yan7_1000())
 ```
 
+### yan17_100
 
-## Atlas Details
-```{r atlas-details, echo = FALSE}
-cat(sprintf("- **Type**: %s\n", yan()$type))
-cat(sprintf("- **Regions**: %d\n", nrow(yan()$core)))
-cat(sprintf("- **Hemispheres**: %s\n", paste(unique(yan()$core$hemi), collapse = ", ")))
-cat(sprintf("- **Has 2D geometry**: %s\n", !is.null(yan()$data$sf)))
-cat(sprintf("- **Has 3D vertices**: %s\n", !is.null(yan()$data$vertices)))
+```{r yan17_100}
+plot(yan17_100())
 ```
 
+### yan17_1000
 
-## Region Names
-
-```{r regions, echo = FALSE}
-regions <- unique(yan()$core$region)
-regions <- regions[!is.na(regions)]
-cat(paste("-", sort(regions)), sep = "\n")
+```{r yan17_1000}
+plot(yan17_1000())
 ```
+## Data source
 
+[ThomasYeoLab/CBIG](https://github.com/ThomasYeoLab/CBIG/tree/master/stable_projects/brain_parcellation/Yan2023_homotopic/parcellations/FreeSurfer/fsaverage5/label) (fsaverage5).
 
-## Code of Conduct
-
-Please note that the ggsegYan project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
+- **Reference**: Yan et al. (2023) [doi:10.1016/j.neuroimage.2023.120010](https://doi.org/10.1016/j.neuroimage.2023.120010)
+- **Date obtained**: 2026-03-28
