@@ -59,8 +59,114 @@
   </div>
 </nav><div class="container template-home">
 <div class="row">
-  <main id="main" class="col-md-9">
-Yan 2023 homotopic brain parcellation for the 'ggseg' ecosystem. Provides 'ggseg_atlas' objects with 2D polygon geometry and 3D vertex indices. Includes 7-network and 17-network variants at resolutions from 100 to 1000 parcels.
+  <main id="main" class="col-md-9"><div class="section level1">
+<div class="page-header"><h1 id="ggsegyan">ggsegYan<a class="anchor" aria-label="anchor" href="#ggsegyan"></a>
+</h1></div>
+<!-- badges: start -->
+
+<p>Yan 2023 Homotopic Cortical Parcellation Atlases for the ggsegverse Ecosystem.</p>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># From r-universe</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"ggsegYan"</span>, repos <span class="op">=</span> <span class="st">"https://ggsegverse.r-universe.dev"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># From GitHub</span></span>
+<span><span class="co"># install.packages("remotes")</span></span>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"ggsegverse/ggsegYan"</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
+</h2>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/ggsegverse/ggsegYan" class="external-link">ggsegYan</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggsegverse.github.io/ggseg/" class="external-link">ggseg</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="fu">yan7_400</span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggsegverse.github.io/ggseg/reference/theme_brain.html" class="external-link">theme_brain</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="atlases">Atlases<a class="anchor" aria-label="anchor" href="#atlases"></a>
+</h2>
+<p>Homotopic cortical parcellations at 100–1000 parcels with Yeo 7-network and 17-network labels (Yan et al., 2023).</p>
+<div class="section level3">
+<h3 id="available-variants">Available variants<a class="anchor" aria-label="anchor" href="#available-variants"></a>
+</h3>
+<table class="table">
+<thead><tr class="header">
+<th align="right">Parcels</th>
+<th align="left">7 Networks</th>
+<th align="left">17 Networks</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="right">100</td>
+<td align="left"><code>yan7_100()</code></td>
+<td align="left"><code>yan17_100()</code></td>
+</tr>
+<tr class="even">
+<td align="right">200</td>
+<td align="left"><code>yan7_200()</code></td>
+<td align="left"><code>yan17_200()</code></td>
+</tr>
+<tr class="odd">
+<td align="right">300</td>
+<td align="left"><code>yan7_300()</code></td>
+<td align="left"><code>yan17_300()</code></td>
+</tr>
+<tr class="even">
+<td align="right">400</td>
+<td align="left"><code>yan7_400()</code></td>
+<td align="left"><code>yan17_400()</code></td>
+</tr>
+<tr class="odd">
+<td align="right">500</td>
+<td align="left"><code>yan7_500()</code></td>
+<td align="left"><code>yan17_500()</code></td>
+</tr>
+<tr class="even">
+<td align="right">600</td>
+<td align="left"><code>yan7_600()</code></td>
+<td align="left"><code>yan17_600()</code></td>
+</tr>
+<tr class="odd">
+<td align="right">700</td>
+<td align="left"><code>yan7_700()</code></td>
+<td align="left"><code>yan17_700()</code></td>
+</tr>
+<tr class="even">
+<td align="right">800</td>
+<td align="left"><code>yan7_800()</code></td>
+<td align="left"><code>yan17_800()</code></td>
+</tr>
+<tr class="odd">
+<td align="right">900</td>
+<td align="left"><code>yan7_900()</code></td>
+<td align="left"><code>yan17_900()</code></td>
+</tr>
+<tr class="even">
+<td align="right">1000</td>
+<td align="left"><code>yan7_1000()</code></td>
+<td align="left"><code>yan17_1000()</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section level2">
+<h2 id="data-source">Data source<a class="anchor" aria-label="anchor" href="#data-source"></a>
+</h2>
+<p>Annotation files from <a href="https://github.com/ThomasYeoLab/CBIG/tree/master/stable_projects/brain_parcellation/Yan2023_homotopic/parcellations/FreeSurfer/fsaverage5/label" class="external-link">ThomasYeoLab/CBIG</a> (fsaverage5).</p>
+<ul>
+<li>
+<strong>Reference</strong>: Yan et al. (2023) <a href="https://doi.org/10.1016/j.neuroimage.2023.120010" class="external-link">doi:10.1016/j.neuroimage.2023.120010</a>
+</li>
+<li>
+<strong>Date obtained</strong>: 2026-03-28</li>
+</ul>
+</div>
+</div>
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
@@ -93,7 +199,13 @@ Yan 2023 homotopic brain parcellation for the 'ggseg' ecosystem. Provides 'ggseg
 </ul>
 </div>
 
-
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://github.com/ggsegverse/ggsegYan/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/ggsegverse/ggsegYan/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
+<li><a href="https://ggsegverse.r-universe.dev/ggsegYan" class="external-link"><img src="https://ggsegverse.r-universe.dev/badges/ggsegYan" alt="r-universe"></a></li>
+</ul>
+</div>
 
   </aside>
 </div>
