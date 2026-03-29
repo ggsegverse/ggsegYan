@@ -14,13 +14,13 @@ Source:
 [`DESCRIPTION`](https://github.com/ggsegverse/ggsegYan/blob/main/DESCRIPTION)
 
 Mowinckel A, Vidal-Pineiro D (2026). *ggsegYan: Yan 2023 Homotopic Atlas
-for the 'ggseg' Ecosystem*. R package version 1.0.0,
+for the 'ggseg' Ecosystem*. R package version 1.0.1,
 <https://github.com/ggsegverse/ggsegYan>.
 
     @Manual{,
       title = {ggsegYan: Yan 2023 Homotopic Atlas for the 'ggseg' Ecosystem},
       author = {Athanasia Mo Mowinckel and Didac Vidal-Pineiro},
       year = {2026},
-      note = {R package version 1.0.0},
+      note = {R package version 1.0.1},
       url = {https://github.com/ggsegverse/ggsegYan},
     }
