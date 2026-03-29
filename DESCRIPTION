@@ -1,6 +1,6 @@
 Package: ggsegYan
 Title: Yan 2023 Homotopic Atlas for the 'ggseg' Ecosystem
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: c(person("Athanasia Mo", "Mowinckel",
                     email = "a.m.mowinckel@psykologi.uio.no",
                     role = c("aut", "cre"),
