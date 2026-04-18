@@ -1,0 +1,92 @@
+---
+format: gfm
+---
+
+<!-- README.md is generated from README.qmd. Please edit that file -->
+
+```{r}
+#| label: setup
+#| include: false
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%",
+  fig.width = 10,
+  fig.retina = 3
+)
+```
+
+# ggsegYan
+
+<!-- badges: start -->
+[![R-CMD-check](https://github.com/ggsegverse/ggsegYan/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ggsegverse/ggsegYan/actions/workflows/R-CMD-check.yaml)
+[![r-universe](https://ggseg.r-universe.dev/badges/ggsegYan)](https://ggseg.r-universe.dev/ggsegYan)
+<!-- badges: end -->
+
+Yan 2023 homotopic cortical parcellation atlases for the ggseg ecosystem.
+Includes 7-network and 17-network parcellations at resolutions from 100 to
+1000 parcels.
+
+## Installation
+
+We recommend installing the ggseg-atlases through the ggseg
+[r-universe](https://ggseg.r-universe.dev/ui#builds):
+
+```{r}
+#| label: install-r-universe
+#| eval: false
+options(repos = c(
+  ggseg = "https://ggseg.r-universe.dev",
+  CRAN = "https://cloud.r-project.org"
+))
+
+install.packages("ggsegYan")
+```
+
+You can install this package from [GitHub](https://github.com/) with:
+
+```r
+# install.packages("pak")
+pak::pak("ggsegverse/ggsegYan")
+```
+
+## Yan 7-network (400 parcels)
+
+```{r}
+#| label: yan7-400
+library(ggseg)
+library(ggsegYan)
+library(ggplot2)
+
+ggplot() +
+  geom_brain(
+    atlas = yan7_400(),
+    mapping = aes(fill = label),
+    position = position_brain(hemi ~ view),
+    show.legend = FALSE
+  ) +
+  scale_fill_manual(values = yan7_400()$palette, na.value = "grey") +
+  theme_void()
+```
+
+## Yan 17-network (400 parcels)
+
+```{r}
+#| label: yan17-400
+ggplot() +
+  geom_brain(
+    atlas = yan17_400(),
+    mapping = aes(fill = label),
+    position = position_brain(hemi ~ view),
+    show.legend = FALSE
+  ) +
+  scale_fill_manual(values = yan17_400()$palette, na.value = "grey") +
+  theme_void()
+```
+
+## Data source
+
+Yan X, Kong R, Xue A, et al. (2023). Homotopic local-global parcellation
+of the human cerebral cortex from resting-state functional connectivity.
+*NeuroImage*, 273, 120010.
