@@ -7,6 +7,7 @@
 #' 3D vertex indices for [ggseg3d::ggseg3d()].
 #'
 #' @family ggseg_atlases
+#' @family cortical_atlases
 #'
 #' @references Yan X, et al. (2023). "Homotopic local-global parcellation
 #'   of the human cerebral cortex from resting-state functional connectivity."
@@ -28,6 +29,7 @@ yan7_100 <- function() .yan7_100
 #' 3D vertex indices for [ggseg3d::ggseg3d()].
 #'
 #' @family ggseg_atlases
+#' @family cortical_atlases
 #'
 #' @references Yan X, et al. (2023). "Homotopic local-global parcellation
 #'   of the human cerebral cortex from resting-state functional connectivity."
@@ -48,6 +50,7 @@ yan7_200 <- function() .yan7_200
 #' 3D vertex indices for [ggseg3d::ggseg3d()].
 #'
 #' @family ggseg_atlases
+#' @family cortical_atlases
 #'
 #' @references Yan X, et al. (2023). "Homotopic local-global parcellation
 #'   of the human cerebral cortex from resting-state functional connectivity."
@@ -68,6 +71,7 @@ yan7_300 <- function() .yan7_300
 #' 3D vertex indices for [ggseg3d::ggseg3d()].
 #'
 #' @family ggseg_atlases
+#' @family cortical_atlases
 #'
 #' @references Yan X, et al. (2023). "Homotopic local-global parcellation
 #'   of the human cerebral cortex from resting-state functional connectivity."
@@ -88,6 +92,7 @@ yan7_400 <- function() .yan7_400
 #' 3D vertex indices for [ggseg3d::ggseg3d()].
 #'
 #' @family ggseg_atlases
+#' @family cortical_atlases
 #'
 #' @references Yan X, et al. (2023). "Homotopic local-global parcellation
 #'   of the human cerebral cortex from resting-state functional connectivity."
@@ -108,6 +113,7 @@ yan7_500 <- function() .yan7_500
 #' 3D vertex indices for [ggseg3d::ggseg3d()].
 #'
 #' @family ggseg_atlases
+#' @family cortical_atlases
 #'
 #' @references Yan X, et al. (2023). "Homotopic local-global parcellation
 #'   of the human cerebral cortex from resting-state functional connectivity."
@@ -128,6 +134,7 @@ yan7_600 <- function() .yan7_600
 #' 3D vertex indices for [ggseg3d::ggseg3d()].
 #'
 #' @family ggseg_atlases
+#' @family cortical_atlases
 #'
 #' @references Yan X, et al. (2023). "Homotopic local-global parcellation
 #'   of the human cerebral cortex from resting-state functional connectivity."
@@ -148,6 +155,7 @@ yan7_700 <- function() .yan7_700
 #' 3D vertex indices for [ggseg3d::ggseg3d()].
 #'
 #' @family ggseg_atlases
+#' @family cortical_atlases
 #'
 #' @references Yan X, et al. (2023). "Homotopic local-global parcellation
 #'   of the human cerebral cortex from resting-state functional connectivity."
@@ -168,6 +176,7 @@ yan7_800 <- function() .yan7_800
 #' 3D vertex indices for [ggseg3d::ggseg3d()].
 #'
 #' @family ggseg_atlases
+#' @family cortical_atlases
 #'
 #' @references Yan X, et al. (2023). "Homotopic local-global parcellation
 #'   of the human cerebral cortex from resting-state functional connectivity."
@@ -188,6 +197,7 @@ yan7_900 <- function() .yan7_900
 #' 3D vertex indices for [ggseg3d::ggseg3d()].
 #'
 #' @family ggseg_atlases
+#' @family cortical_atlases
 #'
 #' @references Yan X, et al. (2023). "Homotopic local-global parcellation
 #'   of the human cerebral cortex from resting-state functional connectivity."
@@ -209,6 +219,7 @@ yan7_1000 <- function() .yan7_1000
 #' 3D vertex indices for [ggseg3d::ggseg3d()].
 #'
 #' @family ggseg_atlases
+#' @family cortical_atlases
 #'
 #' @references Yan X, et al. (2023). "Homotopic local-global parcellation
 #'   of the human cerebral cortex from resting-state functional connectivity."
@@ -229,6 +240,7 @@ yan17_100 <- function() .yan17_100
 #' 3D vertex indices for [ggseg3d::ggseg3d()].
 #'
 #' @family ggseg_atlases
+#' @family cortical_atlases
 #'
 #' @references Yan X, et al. (2023). "Homotopic local-global parcellation
 #'   of the human cerebral cortex from resting-state functional connectivity."
@@ -249,6 +261,7 @@ yan17_200 <- function() .yan17_200
 #' 3D vertex indices for [ggseg3d::ggseg3d()].
 #'
 #' @family ggseg_atlases
+#' @family cortical_atlases
 #'
 #' @references Yan X, et al. (2023). "Homotopic local-global parcellation
 #'   of the human cerebral cortex from resting-state functional connectivity."
@@ -269,6 +282,7 @@ yan17_300 <- function() .yan17_300
 #' 3D vertex indices for [ggseg3d::ggseg3d()].
 #'
 #' @family ggseg_atlases
+#' @family cortical_atlases
 #'
 #' @references Yan X, et al. (2023). "Homotopic local-global parcellation
 #'   of the human cerebral cortex from resting-state functional connectivity."
@@ -289,6 +303,7 @@ yan17_400 <- function() .yan17_400
 #' 3D vertex indices for [ggseg3d::ggseg3d()].
 #'
 #' @family ggseg_atlases
+#' @family cortical_atlases
 #'
 #' @references Yan X, et al. (2023). "Homotopic local-global parcellation
 #'   of the human cerebral cortex from resting-state functional connectivity."
@@ -309,6 +324,7 @@ yan17_500 <- function() .yan17_500
 #' 3D vertex indices for [ggseg3d::ggseg3d()].
 #'
 #' @family ggseg_atlases
+#' @family cortical_atlases
 #'
 #' @references Yan X, et al. (2023). "Homotopic local-global parcellation
 #'   of the human cerebral cortex from resting-state functional connectivity."
@@ -329,6 +345,7 @@ yan17_600 <- function() .yan17_600
 #' 3D vertex indices for [ggseg3d::ggseg3d()].
 #'
 #' @family ggseg_atlases
+#' @family cortical_atlases
 #'
 #' @references Yan X, et al. (2023). "Homotopic local-global parcellation
 #'   of the human cerebral cortex from resting-state functional connectivity."
@@ -349,6 +366,7 @@ yan17_700 <- function() .yan17_700
 #' 3D vertex indices for [ggseg3d::ggseg3d()].
 #'
 #' @family ggseg_atlases
+#' @family cortical_atlases
 #'
 #' @references Yan X, et al. (2023). "Homotopic local-global parcellation
 #'   of the human cerebral cortex from resting-state functional connectivity."
@@ -369,6 +387,7 @@ yan17_800 <- function() .yan17_800
 #' 3D vertex indices for [ggseg3d::ggseg3d()].
 #'
 #' @family ggseg_atlases
+#' @family cortical_atlases
 #'
 #' @references Yan X, et al. (2023). "Homotopic local-global parcellation
 #'   of the human cerebral cortex from resting-state functional connectivity."
@@ -389,6 +408,7 @@ yan17_900 <- function() .yan17_900
 #' 3D vertex indices for [ggseg3d::ggseg3d()].
 #'
 #' @family ggseg_atlases
+#' @family cortical_atlases
 #'
 #' @references Yan X, et al. (2023). "Homotopic local-global parcellation
 #'   of the human cerebral cortex from resting-state functional connectivity."

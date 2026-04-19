@@ -22,3 +22,8 @@ docs/
 
 # Temporary files
 inst/doc
+
+# Pipeline artefacts
+data-raw/**/*.rds
+data-raw/**/*.rda
+data-raw/**/*.png
