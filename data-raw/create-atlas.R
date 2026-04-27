@@ -68,7 +68,7 @@ for (net_key in names(networks)) {
       input_annot = annot_files,
       atlas_name = atlas_name,
       output_dir = file.path("data-raw", atlas_name),
-      skip_existing = TRUE,
+      skip_existing = FALSE,
       cleanup = FALSE
     ) |>
       atlas_region_contextual("unknown|Background", "label")
