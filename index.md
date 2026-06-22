@@ -6,6 +6,7 @@ Ecosystem.
 ## Installation
 
 ``` r
+
 # From r-universe
 install.packages("ggsegYan", repos = "https://ggsegverse.r-universe.dev")
 
@@ -21,22 +22,23 @@ and 17-network labels (Yan et al., 2023).
 
 ### Available variants
 
-| Parcels | 7 Networks                                                                    | 17 Networks                                                                     |
-|--------:|:------------------------------------------------------------------------------|:--------------------------------------------------------------------------------|
-|     100 | [`yan7_100()`](https://ggsegverse.github.io/ggsegYan/reference/yan7_100.md)   | [`yan17_100()`](https://ggsegverse.github.io/ggsegYan/reference/yan17_100.md)   |
-|     200 | [`yan7_200()`](https://ggsegverse.github.io/ggsegYan/reference/yan7_200.md)   | [`yan17_200()`](https://ggsegverse.github.io/ggsegYan/reference/yan17_200.md)   |
-|     300 | [`yan7_300()`](https://ggsegverse.github.io/ggsegYan/reference/yan7_300.md)   | [`yan17_300()`](https://ggsegverse.github.io/ggsegYan/reference/yan17_300.md)   |
-|     400 | [`yan7_400()`](https://ggsegverse.github.io/ggsegYan/reference/yan7_400.md)   | [`yan17_400()`](https://ggsegverse.github.io/ggsegYan/reference/yan17_400.md)   |
-|     500 | [`yan7_500()`](https://ggsegverse.github.io/ggsegYan/reference/yan7_500.md)   | [`yan17_500()`](https://ggsegverse.github.io/ggsegYan/reference/yan17_500.md)   |
-|     600 | [`yan7_600()`](https://ggsegverse.github.io/ggsegYan/reference/yan7_600.md)   | [`yan17_600()`](https://ggsegverse.github.io/ggsegYan/reference/yan17_600.md)   |
-|     700 | [`yan7_700()`](https://ggsegverse.github.io/ggsegYan/reference/yan7_700.md)   | [`yan17_700()`](https://ggsegverse.github.io/ggsegYan/reference/yan17_700.md)   |
-|     800 | [`yan7_800()`](https://ggsegverse.github.io/ggsegYan/reference/yan7_800.md)   | [`yan17_800()`](https://ggsegverse.github.io/ggsegYan/reference/yan17_800.md)   |
-|     900 | [`yan7_900()`](https://ggsegverse.github.io/ggsegYan/reference/yan7_900.md)   | [`yan17_900()`](https://ggsegverse.github.io/ggsegYan/reference/yan17_900.md)   |
-|    1000 | [`yan7_1000()`](https://ggsegverse.github.io/ggsegYan/reference/yan7_1000.md) | [`yan17_1000()`](https://ggsegverse.github.io/ggsegYan/reference/yan17_1000.md) |
+| Parcels | 7 Networks | 17 Networks |
+|---:|:---|:---|
+| 100 | [`yan7_100()`](https://ggsegverse.github.io/ggsegYan/reference/yan7_100.md) | [`yan17_100()`](https://ggsegverse.github.io/ggsegYan/reference/yan17_100.md) |
+| 200 | [`yan7_200()`](https://ggsegverse.github.io/ggsegYan/reference/yan7_200.md) | [`yan17_200()`](https://ggsegverse.github.io/ggsegYan/reference/yan17_200.md) |
+| 300 | [`yan7_300()`](https://ggsegverse.github.io/ggsegYan/reference/yan7_300.md) | [`yan17_300()`](https://ggsegverse.github.io/ggsegYan/reference/yan17_300.md) |
+| 400 | [`yan7_400()`](https://ggsegverse.github.io/ggsegYan/reference/yan7_400.md) | [`yan17_400()`](https://ggsegverse.github.io/ggsegYan/reference/yan17_400.md) |
+| 500 | [`yan7_500()`](https://ggsegverse.github.io/ggsegYan/reference/yan7_500.md) | [`yan17_500()`](https://ggsegverse.github.io/ggsegYan/reference/yan17_500.md) |
+| 600 | [`yan7_600()`](https://ggsegverse.github.io/ggsegYan/reference/yan7_600.md) | [`yan17_600()`](https://ggsegverse.github.io/ggsegYan/reference/yan17_600.md) |
+| 700 | [`yan7_700()`](https://ggsegverse.github.io/ggsegYan/reference/yan7_700.md) | [`yan17_700()`](https://ggsegverse.github.io/ggsegYan/reference/yan17_700.md) |
+| 800 | [`yan7_800()`](https://ggsegverse.github.io/ggsegYan/reference/yan7_800.md) | [`yan17_800()`](https://ggsegverse.github.io/ggsegYan/reference/yan17_800.md) |
+| 900 | [`yan7_900()`](https://ggsegverse.github.io/ggsegYan/reference/yan7_900.md) | [`yan17_900()`](https://ggsegverse.github.io/ggsegYan/reference/yan17_900.md) |
+| 1000 | [`yan7_1000()`](https://ggsegverse.github.io/ggsegYan/reference/yan7_1000.md) | [`yan17_1000()`](https://ggsegverse.github.io/ggsegYan/reference/yan17_1000.md) |
 
 ### yan7_100
 
 ``` r
+
 library(ggsegYan)
 plot(yan7_100())
 ```
@@ -46,6 +48,7 @@ plot(yan7_100())
 ### yan7_1000
 
 ``` r
+
 plot(yan7_1000())
 ```
 
@@ -54,6 +57,7 @@ plot(yan7_1000())
 ### yan17_100
 
 ``` r
+
 plot(yan17_100())
 ```
 
@@ -62,6 +66,7 @@ plot(yan17_100())
 ### yan17_1000
 
 ``` r
+
 plot(yan17_1000())
 ```
 
